@@ -14,6 +14,8 @@ import 'dart:io';
     > Compiled - AOT(Ahead of Time) - Compiled Ahead of time during production
                - JIT(Just in Time) - Compiled when we run the code during
                                      development
+    > 100% Object Oriented - Everythings an Object. int is an object,
+                             even null is an object!
 */
 
 /*
