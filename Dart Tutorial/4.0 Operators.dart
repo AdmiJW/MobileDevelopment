@@ -8,11 +8,24 @@
     Now, common operators that you see in other languages, apply here too!
     Quick refresher:
         +, -, *, /, %, ==, !=, >=, <=, *=, +=, -=, ++, --, &&, ||, !,
+
+    Division by default results in floating numbers. To have integer division,
+    use
+
+      ~/
+
     Also, ternary operator works like Java, Javascript or C++
         expression? valIfTrue: valIfFalse;
 
     Type checking operator is simply a keyword 'is', like in Python
         x is int
+        x is! double
+    Also, type casting is done via 'as' keyword, but target must be subtype
+    to the super type that is wanted to be cast
+        double a = 1.231312;
+        print(a as Object)
+
+
 */
 
 operators_1() {

@@ -23,6 +23,7 @@
 */
 
 import 'dart:math';
+import 'dart:io';
 
 control_1() {
   var arr = [];
@@ -30,8 +31,9 @@ control_1() {
 
   for (var i = 0; i < 10; ++i) arr.add( rand.nextInt(50) );
   
-  for (var v in arr) print(v);
-  arr.forEach( (x) => print(x) );
+  for (var v in arr) stdout.write("$v ");
+  print("");
+  arr.forEach( (x) => stdout.write("$x ") );
 }
 
 
