@@ -36,10 +36,13 @@ Flutter is developed by Google, and so is Firebase. Therefore, google made it ea
 
 1. `Firebase` needs to be initialized. You may do so in the `main()` function:
     ```dart
+    import 'package:firebase_core/firebase_core.dart';
+    import 'firebase_options.dart'; 
+
     main() async {
         WidgetsFlutterBinding.ensureInitialized();
         await Firebase.initializeApp(
-            // This is auto imported from firebase_options.dart
+            // DefaultFirebaseOptions is imported from firebase_options.dart
             options: DefaultFirebaseOptions.currentPlatform,   
         );
         runApp(MyApp());
