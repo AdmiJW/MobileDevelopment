@@ -221,6 +221,20 @@ My personal cheatsheet for Dart language to quickly get started with Dart progra
 
 - Override superclass' method using `@override` annotation: `@override void method() {}`.
 
+- Factory constructors:
+
+    ```dart
+    abstract class Shape {
+        factory Shape(String type) {
+            if (type == 'circle') return Circle(2);
+            if (type == 'square') return Square(2);
+            throw 'Can\'t create $type.';
+        }
+    }
+    ```
+
+- The Dart language doesn't include an `interface` keyword, because every class defines an interface. You can implement an interface by using `implements` keyword: `class MyClass implements AnotherClass {}`.
+
 ---
 <br>
 
@@ -242,6 +256,7 @@ My personal cheatsheet for Dart language to quickly get started with Dart progra
     ```
 
 - Re-throwing an exception: `on Exception { rethrow; }` or `catch (e) { rethrow; }`.
+
 
 ---
 <br>
