@@ -1,4 +1,4 @@
-name: flutter_riverpod
+name: flutter_riverpod_example
 description: A new Flutter project.
 publish_to: 'none'
 version: 0.1.0
@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_riverpod: ^2.2.0
+  font_awesome_flutter: ^10.4.0
+  styled_widget: ^0.4.1
 
 dev_dependencies:
   flutter_test:
